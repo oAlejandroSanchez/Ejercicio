@@ -1,13 +1,13 @@
-#include<stdlib.h>
+#include<stdlib.h> //cambi un error de escritura
 #include<stdio.h>
 #include<time.h>
-
-char *lista[]={"Nombre 1, Nombre 2, Nombre 3"}; 
-int i, c, tam, gan, sel1, sel2, sel3;
+int main(){ //se agrego la función principal main
+	char *lista[]={"Nombre 1, Nombre 2, Nombre 3"}; 
+	int i, c, tam, gan, sel1, sel2, sel3;
 
     do{
-        printf(\n¡Hola! Apreta 1 y enter para ver la lista de concursantes! o 2 para salir\n\n>>");
-        scanf("%i",sel1);
+        printf("\n¡Hola! Apreta 1 y enter para ver la lista de concursantes! o 2 para salir\n\n>>");//se corrigio posición de comillas
+        scanf("%i",&sel1);//se agrego el & faltante
         switch(sel1){
             case 1:
             printf("\nLa lista es la siguente\n\n");
@@ -58,7 +58,7 @@ int i, c, tam, gan, sel1, sel2, sel3;
                 }while(sel2 != 2)
             break;
             case 2:
-            printf("\nBye bye );
+            printf("\nBye bye" );//faltaban comillas
             break;
             default:
             printf("\nNo existe tal opción\n");
@@ -66,4 +66,5 @@ int i, c, tam, gan, sel1, sel2, sel3;
         }
     }while(sel1!=2);
 
+}
 }
