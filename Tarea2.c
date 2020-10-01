@@ -51,11 +51,11 @@ int main(){ //se agrego la función principal main
                     	printf("\nVolvamos al menú anterior\n");
                     	break;
                     	default:
-                    	printf("\nNo existe tal opción\n")
+                    	printf("\nNo existe tal opción\n"); //Faltaba punto y coma
                     	break;
                     }
                     
-                }while(sel2 != 2)
+                }while(sel2 != 2); //Faltaba punto y coma
             break;
             case 2:
             printf("\nBye bye" );//faltaban comillas
@@ -67,4 +67,4 @@ int main(){ //se agrego la función principal main
     }while(sel1!=2);
 
 }
-}
+//Sobraba una llave de cierre
